@@ -1,0 +1,9 @@
+{
+	"watch": [
+		"./",
+		"./ionutcostica.com/", "./ionutcostica.com/templates", "./ionutcostica.com/views",
+		"./iuliamihet.com/"
+	],
+	"ext": "js json html",
+	"ignore": []
+}
