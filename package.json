@@ -1,22 +1,22 @@
 {
-  "name": "ionutcostica.com",
-  "version": "0.0.1",
-  "description": "My personal site",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "ssh://root@188.166.99.16/var/repo/ionutcostica.com.git"
-  },
-  "keywords": [
-    "personal",
-    "site"
-  ],
-  "author": "Ionut Costica",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.12.3"
-  }
+    "name": "ionutcostica.com",
+    "version": "0.0.2",
+    "description": "My personal site",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://root@188.166.99.16/var/repo/ionutcostica.com.git"
+    },
+    "keywords": [
+        "personal",
+        "site"
+    ],
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.12.4",
+        "express-vhost": "^0.2.0"
+    }
 }
