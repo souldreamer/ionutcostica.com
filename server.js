@@ -15,4 +15,5 @@ var serve = server.listen(80, function () {
 });
 
 evh.register('localhost', appFactory('ionutcostica.com'));
+evh.register('ionutcostica.com', appFactory('ionutcostica.com'));
 evh.register('iuliamihet.com', appFactory('iuliamihet.com'));
