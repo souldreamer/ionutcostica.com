@@ -7,13 +7,11 @@ var DataModel = require('./resume');
 
 var app = express();
 
-app.configure(function() {
-	kleiDust.setOptions({extension: 'dust.html', keepWhiteSpace: true, useHelpers: true});
-	app.set('views', __dirname + '/views');
-	app.engine('dust.html', kleiDust.dust);
-	app.set('view engine', 'dust.html');
-	app.set('view options', {layout: false});
-});
+kleiDust.setOptions({extension: 'dust.html', keepWhiteSpace: true, useHelpers: true});
+app.set('views', __dirname + '/views');
+app.engine('dust.html', kleiDust.dust);
+app.set('view engine', 'dust.html');
+app.set('view options', {layout: false});
 
 app.get('/', function(req, res) {
     res.end('<html><body>COMING SOON!</body></html>');
