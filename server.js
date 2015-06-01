@@ -10,7 +10,7 @@ var appFactory = function(website) {
 
 var server = express();
 server.use(evh.vhost(server.enabled('trust proxy')));
-var serve = server.listen(8080, function () {
+var serve = server.listen(80, function () {
 	console.log('Listening for clients at ' + serve.address().address + ':' + serve.address().port);
 });
 

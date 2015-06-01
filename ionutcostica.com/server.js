@@ -2,34 +2,28 @@
 'use strict';
 
 var express = require('express');
-var doT = require('dot');
-var Promise = require('promise');
-var fs = require('fs');
+var kleiDust = require('klei-dust');
 var DataModel = require('./resume');
 
 var app = express();
 
-var cachedPages = {};
-function loadPage(filename) {
-	return new Promise(function loadPageInner(resolve, reject) {
-		console.log('loading page', filename);
-		if (cachedPages[filename]) resolve(cachedPages[filename]);
-		fs.readFile(filename, function(err, data) {
-			if (err) { reject(Error(err)); }
-			cachedPages[filename] = doT.template(data);
-			resolve(cachedPages[filename]);
-		});
-	});
-}
+app.configure(function() {
+	kleiDust.setOptions({extension: 'dust.html', keepWhiteSpace: true, useHelpers: true});
+	app.set('views', __dirname + '/views');
+	app.engine('dust.html', kleiDust.dust);
+	app.set('view engine', 'dust.html');
+	app.set('view options', {layout: false});
+});
 
 app.get('/', function(req, res) {
     res.end('<html><body>COMING SOON!</body></html>');
 });
-app.get('/resume', function(req, res) {
+app.use('/resume', express.static('ionutcostica.com/resume/temp'));
+app.get('/resumex', function(req, res) {
+    console.log('requested resume for ionutcostica.com');
     loadPage(__dirname + '/templates/resume.dot.html').then(function(templateFunction) {
         res.send(templateFunction(DataModel));
     });
 });
-app.use('/resume', express.static('resume/temp'));
 
 module.exports = app;

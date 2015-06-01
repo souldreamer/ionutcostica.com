@@ -2,7 +2,17 @@
 
 var DataModel = {
 	resume: {
-		sections: [],
+		sections: [
+			{key: "profile", name: "Profile"},
+			{key: "work", name: "Work Experience"},
+			{key: "certifications", name: "Certifications"},
+			{key: "courses", name: "Courses"},
+			{key: "education", name: "Education"},
+			{key: "professionalskills", name: "Professional Skills"},
+			{key: "personalskills", name: "Personal Skills"},
+			{key: "interests", name: "Interests"},
+			{key: "contact", name: "Contact"}
+		],
 		header: {
 			name: 'Ionut Costica',
 			statement: [

@@ -1,3 +1,4 @@
+</head>
 <!DOCTYPE html>
 
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -19,36 +20,39 @@
 <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
 <!-- style sheets-->
-<link rel="stylesheet" media="all" href="css/bootstrap.css" type="text/css"/>
-<link rel="stylesheet" media="all" href="css/custom.css" type="text/css"/>
+<link rel="stylesheet" media="all" href="/resume/css/bootstrap.css" type="text/css"/>
+<link href="/resume/css/roboto.min.css" rel="stylesheet">
+<link href="/resume/css/material.min.css" rel="stylesheet">
+<link href="/resume/css/ripples.min.css" rel="stylesheet">
+<link rel="stylesheet" media="all" href="/resume/css/custom.css" type="text/css"/>
 
 <!-- main jquery libraries / others are at the bottom-->
-<script src="js/jquery.min.js " type="text/javascript"></script>
-<script src="js/modernizr.js" type="text/javascript"></script>
+<script src="/resume/js/jquery.min.js " type="text/javascript"></script>
+<script src="/resume/js/modernizr.js" type="text/javascript"></script>
 
-</head>
 <body>
 
 <!-- Top icons -->
 <div class="top-icons hidden-print">
-	<a class="top-menu hidden-xs hidden-sm" data-toggle="tooltip" data-placement="bottom" title="Menu toggle"><span class="glyphicon glyphicon-th-list"></span></a>
-	<a href="resume.pdf" class="top-download-resume hidden-xs hidden-sm" data-toggle="tooltip" data-placement="bottom" title="Download resume"><span class="glyphicon glyphicon-cloud-download"></span></a>
-	<a href="javascript:window.print();" class="top-print-resume hidden-xs hidden-sm" data-toggle="tooltip" data-placement="bottom" title="Print resume"><span class="glyphicon glyphicon-print"></span></a>
-	<a class="top-contact hidden-xs hidden-sm" data-toggle="tooltip" data-placement="bottom" title="Contact me"><span class="glyphicon glyphicon-send"></span></a>
+	<a class="top-menu hidden-xs hidden-sm btn btn-flat btn-material-purple" data-toggle="tooltip" data-placement="bottom" title="Menu toggle"><i class="mdi-navigation-menu"></i></a>
+	<a href="/resume/resume.pdf" class="top-download-resume hidden-xs hidden-sm btn btn-flat btn-material-blue" data-toggle="tooltip" data-placement="bottom" title="Download resume"><i class="mdi-file-cloud-download"></i></a>
+	<a href="javascript:window.print();" class="top-print-resume hidden-xs hidden-sm btn btn-flat btn-material-red" data-toggle="tooltip" data-placement="bottom" title="Print resume"><i class="mdi-action-print"></i></a>
+	<a class="top-contact hidden-xs hidden-sm btn btn-flat btn-material-orange" data-toggle="tooltip" data-placement="bottom" title="Contact me"><i class="mdi-action-info-outline"></i></a>
 </div>
 <!-- end Top icons -->
 
 <!-- Navigation -->
 <nav id="spy" class="spy hidden-sm hidden-xs hidden-print">
     <ul>
-        <li class="active"><a href="#profile">Profile</a></li>
-        <li><a href="#work-experience">Work experience</a></li>
-		<li><a href="#certifications">Certifications</a></li>
-		<li><a href="#courses">Courses</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#professional-skills">Skills</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+        <li class="active"><a href="#profile" class="withripple">Profile</a></li>
+        <li><a href="#work-experience" class="withripple">Work experience</a></li>
+		<li><a href="#certifications" class="withripple">Certifications</a></li>
+		<li><a href="#courses" class="withripple">Courses</a></li>
+        <li><a href="#education" class="withripple">Education</a></li>
+        <li><a href="#professional-skills" class="withripple">Skills</a></li>
+        <li><a href="#interests" class="withripple">Interests</a></li>
+        <li><a href="#contact" class="withripple">Contact</a></li>
     </ul>
 </nav>
 <!-- end Navigation -->
@@ -78,11 +82,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
-                <img src="img/profile.jpg" class="face" alt="">
+                <img src="/resume/img/profile.jpg" class="face" alt="">
                 <hr class="empty" style="margin-top: -40px">
                 <h1 class="header-name">Ionut Costica</h1>
                 <h2 class="header-title">Full Stack Web Developer</h2>
-                <p class="header-subtitle"><b>Hello, I'm Ionut!</b>
+                <p class="header-subtitle"><b>Hello, I'm Ionut!</b>&nbsp;
 					I'm a Full Stack Web Developer &amp; Web Application Developer.<br/>
 					I'm passionate about making great web sites &amp; applications, both client and server-side.<br/>
 					I love creating programs with <em>engaging interfaces</em> and a <em>streamlined user experience</em>.<br/>
@@ -407,13 +411,16 @@
 </div>
 <!-- Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-progressbar.js"></script>
-<script src="js/spy.js"></script>
-<script src="js/scripts.js"></script>
+<script src="/resume/js/bootstrap.min.js"></script>
+<script src="/resume/js/bootstrap-progressbar.js"></script>
+<script src="/resume/js/material.min.js"></script>
+<script src="/resume/js/ripples.min.js"></script>
+
+<script src="/resume/js/spy.js"></script>
+<script src="/resume/js/scripts.js"></script>
 <!-- Charts -->
-<script src="js/jquery.easypiechart.js"></script>
-<script src="js/chart.js"></script>
+<script src="/resume/js/jquery.easypiechart.js"></script>
+<script src="/resume/js/chart.js"></script>
 
 </body>
 </html>
