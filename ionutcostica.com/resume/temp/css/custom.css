@@ -316,6 +316,27 @@ ul .description {
     border-bottom: 0;
 }
 
+.top-source {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-bottom: 0;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.top-source:hover {
+    background-color: #ff003b;
+    color: #fff;
+    border-bottom: 0;
+}
+
 /* Nav ------------------------------------------------- */
 
 nav {
