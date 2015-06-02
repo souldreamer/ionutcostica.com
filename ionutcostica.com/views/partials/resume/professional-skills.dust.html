@@ -1,0 +1,23 @@
+<!-- Professional skills -->
+{?professionalskills}
+<section id="professional-skills" class="professional-skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-5">
+                <ul>
+                    {>"./partials/resume/controls/section-title" section="professionalskills" /}
+					{#professionalskills}
+                    <li>
+						{>"./partials/resume/controls/skill-general" skill=category proficiency=proficiency /}
+						{#skills}
+							{>"./partials/resume/controls/skill-specific" skill=skill proficiency=proficiency /}
+						{/skills}
+                    </li>
+					{/professionalskills}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{/professionalskills}
+<!-- end Professional skills -->

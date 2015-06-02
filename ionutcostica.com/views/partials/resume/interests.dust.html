@@ -1,0 +1,21 @@
+<!-- Interests -->
+{?interests}
+<section id="interests" class="interests">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-5">
+                <ul>
+                    {>"./partials/resume/controls/section-title" section="interests" /}
+					{#interests}
+                    <li>
+                        <p><strong>{interest|s}</strong></p>
+                        {?description}<p class="description">{description|s}</p>{/description}
+                    </li>
+					{/interests}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{/interests}
+<!-- end Interests -->

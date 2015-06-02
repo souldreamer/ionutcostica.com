@@ -1,0 +1,34 @@
+<!-- Work experience -->
+{?work}
+<section id="work-experience" class="work-experience">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-5">
+                <ul>
+                    {>"./partials/resume/controls/section-title" section="work" /}
+					{#work}
+                    <li>
+                        <span class="note">{period|s} ({length|s})</span>
+						{#details}
+						<p>{.|s}</p>
+						{/details}
+						{#description}
+						<p class="description">{.|s}</p>
+						{/description}
+						{?technologies}
+						<p class="description">
+							<strong>Technologies</strong><br/>
+							{#technologies}
+							{?type}<em>{type|s}:</em>{/type}{~s}{which|s}<br/>
+							{/technologies}
+						</p>
+						{/technologies}
+                    </li>
+					{/work}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{/work}
+<!-- end Work experience -->

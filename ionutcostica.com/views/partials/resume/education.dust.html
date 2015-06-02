@@ -1,0 +1,23 @@
+<!-- Education -->
+{?education}
+<section id="education" class="education">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-5">
+                <ul>
+                    {>"./partials/resume/controls/section-title" section="education" /}
+					{#education}
+                    <li>
+                        {?period}<span class="note">{period|s}</span>{/period}
+                        {?degree}<p><strong>{degree|s}</strong></p>{/degree}
+                        {?school}<p><strong>{school|s}</strong>{?location}{~s}in {location|s}{/location}</p>
+						{:else}{?location}<p>in {location}</p>{/location}{/school}
+                    </li>
+					{/education}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{/education}
+<!-- end Education -->

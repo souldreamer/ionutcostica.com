@@ -1,0 +1,20 @@
+<!-- Personal skills -->
+{?personalskills}
+<section id="personal-skills" class="personal-skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-5">
+                <ul>
+                    {>"./partials/resume/controls/section-title" section="personalskills" /}
+                    <li>
+						{#personalskills}
+						{>"./partials/resume/controls/skill-specific" skill=skill proficiency=proficiency /}
+						{/personalskills}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{/personalskills}
+<!-- end Personal skills -->

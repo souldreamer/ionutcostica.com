@@ -69,9 +69,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding-left: 0px !important;
 }
 
-.title .glyphicon {
+.title .icon {
     background-color: rgba(0, 0, 0, 0.75);
     color: #fff;
+	position: relative;
+	min-width: 1em;
     left: -110px;
     padding: 10px;
     -webkit-border-radius: 50%;
@@ -81,7 +83,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 @media all and (max-width: 768px) {
-    .title .glyphicon {
+    .title .icon {
         left: -35px;
         color: #fff !important;
     }
@@ -226,8 +228,8 @@ ul .description {
 
 .top-icons {
 	position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 0;
+    left: 8px;
 	width: 100%;
     z-index: 9999;
 }
@@ -318,7 +320,10 @@ ul .description {
 
 nav {
     position: fixed;
-    top: 33%;
+    top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
     left: 20px;
     z-index: 999;
 }
@@ -355,6 +360,7 @@ nav ul li {
 nav ul li a {
 	padding: 5px 15px;
 	border-radius: 2px;
+	display: block;
 	-moz-border-radius: 2px;
 	-ms-border-radius: 2px;
 	-o-border-radius: 2px;
@@ -486,49 +492,49 @@ nav .active a {
 
 /* Profile ------------------------------------------------- */
 
-.profile .title .glyphicon{
+.profile .title .icon{
     background-color: #9300ff;
 }
 
 /* Certifications ------------------------------------------ */
 
-.certifications .title .glyphicon{
+.certifications .title .icon{
     background-color: #f00;
 }
 
 /* Work experience ------------------------------------------------- */
 
-.work-experience .title .glyphicon{
+.work-experience .title .icon{
     background-color: #00a7ff;
 }
 
 /* Education ------------------------------------------------- */
 
-.education .title .glyphicon{
+.education .title .icon{
     background-color: #07b500;
 }
 
 /* Professional skills ------------------------------------------------- */
 
-.professional-skills .title .glyphicon{
+.professional-skills .title .icon{
     background-color: #ffa700;
 }
 
 /* Personal skills ------------------------------------------------- */
 
-.personal-skills .title .glyphicon{
+.personal-skills .title .icon{
     background-color: #00aca5;
 }
 
 /* Interests ------------------------------------------------- */
 
-.interests .title .glyphicon{
+.interests .title .icon{
     background-color: #f00;
 }
 
 /* Portfolio ------------------------------------------------ */
 
-.portfolio .title .glyphicon{
+.portfolio .title .icon{
     background-color: #0089ff;
 }
 
@@ -586,7 +592,7 @@ nav .active a {
 
 /* Contact Form ------------------------------------------------ */
 
-.contact .title .glyphicon{
+.contact .title .icon{
     background-color: #00c60f;
 }
 
@@ -650,7 +656,7 @@ textarea.form-control {
     border-radius: 3px;
 }
 
-form .glyphicon {
+form .icon {
     opacity: .25;
 }
 
@@ -667,7 +673,7 @@ form .glyphicon {
     transition: all .3s ease;
 }
 
-.btn .glyphicon {
+.btn .icon {
     margin-right: 7px;
     opacity: 1;
 }
@@ -683,7 +689,7 @@ form .glyphicon {
 
 /* Up ------------------------------------------------ */
 
-.contact .title.up .glyphicon{
+.contact .title.up .icon{
     background-color: #ffad00;
 }
 
@@ -711,7 +717,7 @@ form .glyphicon {
     left: 0;
 }
 
-.settings .glyphicon {
+.settings .icon {
     background-color: rgba(0, 0, 0, 0.75);
     position: relative;
     top: 0;
@@ -750,6 +756,16 @@ form .glyphicon {
 .tooltip {
     font-family: 'Oswald';
     font-weight: 300;
+}
+
+.header-line {
+	display: inline;
+}
+
+@media (min-width: 992px), (max-width: 766px) and (min-width: 630px) {
+	.header-line {
+		display: block;
+	}
 }
 
 @media print {

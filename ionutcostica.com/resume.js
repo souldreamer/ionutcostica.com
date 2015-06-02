@@ -3,18 +3,21 @@
 var DataModel = {
 	resume: {
 		sections: [
-			{key: "profile", name: "Profile"},
-			{key: "work", name: "Work Experience"},
-			{key: "certifications", name: "Certifications"},
-			{key: "courses", name: "Courses"},
-			{key: "education", name: "Education"},
-			{key: "professionalskills", name: "Professional Skills"},
-			{key: "personalskills", name: "Personal Skills"},
-			{key: "interests", name: "Interests"},
-			{key: "contact", name: "Contact"}
+			{key: 'profile', name: 'Profile', icon: 'mdi-social-person'},
+			{key: 'work', name: 'Work Experience', icon: 'mdi-action-work'},
+			{key: 'certifications', name: 'Certifications', icon: 'mdi-social-whatshot'},
+			{key: 'courses', name: 'Courses', icon: 'mdi-maps-local-library'},
+			{key: 'education', name: 'Education', icon: 'mdi-social-school'},
+			{key: 'professionalskills', name: 'Professional Skills', icon: 'mdi-action-trending-up'},
+			{key: 'personalskills', name: 'Personal Skills', icon: 'mdi-av-equalizer'},
+			{key: 'interests', name: 'Interests', icon: 'mdi-action-favorite'},
+			{key: 'contact', name: 'Contact', icon: 'mdi-communication-email'},
+			{key: 'up', name: 'Up', icon: 'mdi-hardware-keyboard-arrow-up', includeInMenu: false}
 		],
 		header: {
 			name: 'Ionut Costica',
+			occupation: 'Full Stack Web Developer',
+			image: '/resume/img/profile.jpg',
 			statement: [
 				'<b>Hello, I\'m Ionut!</b> I\'m a Full Stack Web Developer &amp; Web Application Developer.',
 				'I\'m passionate about making great web sites &amp; applications, both client and server-side.',
@@ -24,6 +27,8 @@ var DataModel = {
 		},
 		profile: {
 			fullname: 'Ionut Costica',
+			birthdate: '20 May 1986',
+			birthplace: 'Timisoara, Romania',
 			social: {
 				linkedin: 'https://www.linkedin.com/in/ionutcostica'
 			}
@@ -39,11 +44,11 @@ var DataModel = {
 				description: [
 					'Developing Intranet Web Applications for AMR (Automated Meter Reading), meter configuration and report generation.'
 				],
-				technologies: {
-					'Back-end': 'C#, ASP.NET, DevExpress, Microsoft SQL Server, MongoDB',
-					'Front-end': 'HTML5, CSS3, JavaScript, JQuery',
-					'Additionally': 'worked on improving the user interface and user experience of the application, and convinced the management to let me implement a caching system using MongoDB as a storage layer, which greatly improved overall performance and user experience.'
-				}
+				technologies: [
+					{type: 'Back-end', which: 'C#, ASP.NET, DevExpress, Microsoft SQL Server, MongoDB'},
+					{type: 'Front-end', which: 'HTML5, CSS3, JavaScript, JQuery'},
+					{which: 'Additionally, worked on improving the user interface and user experience of the application, and convinced the management to let me implement a caching system using MongoDB as a storage layer, which greatly improved overall performance and user experience.'}
+				]
 			},
 			{
 				period: 'September 2011 - January 2012',
@@ -56,10 +61,10 @@ var DataModel = {
 					'Website optimization, database administration &amp; optimization',
 					'Wordpress plug-in development'
 				],
-				technologies: {
-					'Back-end': 'PHP, MySQL',
-					'Front-end': 'HTML, CSS, JavaScript, Mootools'
-				}
+				technologies: [
+					{type: 'Back-end', which: 'PHP, MySQL'},
+					{type: 'Front-end', which: 'HTML, CSS, JavaScript, Mootools'}
+				]
 			},
 			{
 				period: 'May 2011 - July 2011',
@@ -71,9 +76,9 @@ var DataModel = {
 				description: [
 					'Android application development using Adobe Flash &amp; Adobe Flex.'
 				],
-				technologies: {
-					'Application': 'Adobe Flash, Adobe Flex'
-				}
+				technologies: [
+					{type: 'Applications', which: 'Adobe Flash, Adobe Flex'}
+				]
 			},
 			{
 				period: 'March 2008 - May 2009',
@@ -229,7 +234,7 @@ var DataModel = {
 			}
 		],
 		personalskills: [
-			{ proficiency: 0, skill: '' }
+			{ proficiency: 100, skill: 'Creativity' }
 		],
 		interests: [
 			{

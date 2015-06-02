@@ -1,0 +1,19 @@
+<!-- Header -->
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <img src="{header.image}" class="face" alt="{header.name} Profile Image">
+                <hr class="empty" style="margin-top: -40px">
+                <h1 class="header-name">{header.name|s}</h1>
+                <h2 class="header-title">{header.occupation|s}</h2>
+                <div class="header-subtitle">
+					{#header.statement}
+						<div class="header-line">{.|s}{~s}</div>
+					{/header.statement}
+				</div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end Header -->

@@ -1,0 +1,83 @@
+</head>
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+<html class="not-ie" lang="en">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Ionut Costica's resume" />
+<meta name="keywords" content="Ionut Costica, resume, cv, curriculum vitae, life, story"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>Ionut Costica | Resume</title>
+
+<!-- google web font-->
+<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+<!-- style sheets-->
+<link rel="stylesheet" media="all" href="/resume/css/bootstrap.css" type="text/css"/>
+<link href="/resume/css/roboto.min.css" rel="stylesheet">
+<link href="/resume/css/material.min.css" rel="stylesheet">
+<link href="/resume/css/ripples.min.css" rel="stylesheet">
+<link rel="stylesheet" media="all" href="/resume/css/custom.css" type="text/css"/>
+
+<!-- main jquery libraries / others are at the bottom-->
+<script src="/resume/js/jquery.min.js " type="text/javascript"></script>
+<script src="/resume/js/modernizr.js" type="text/javascript"></script>
+
+<body>
+
+<!-- Top icons -->
+<div class="top-icons hidden-print">
+	<a class="top-menu hidden-xs hidden-sm btn btn-flat btn-material-purple" data-toggle="tooltip" data-placement="bottom" title="Menu toggle"><i class="mdi-navigation-menu"></i></a>
+	<a href="/resume/resume.pdf" class="top-download-resume hidden-xs hidden-sm btn btn-flat btn-material-blue" data-toggle="tooltip" data-placement="bottom" title="Download resume"><i class="mdi-file-cloud-download"></i></a>
+	<a href="javascript:window.print();" class="top-print-resume hidden-xs hidden-sm btn btn-flat btn-material-red" data-toggle="tooltip" data-placement="bottom" title="Print resume"><i class="mdi-action-print"></i></a>
+	<a class="top-contact hidden-xs hidden-sm btn btn-flat btn-material-orange" data-toggle="tooltip" data-placement="bottom" title="Contact me"><i class="mdi-action-info-outline"></i></a>
+</div>
+<!-- end Top icons -->
+
+{>"./partials/resume/navigation" /}
+{>"./partials/resume/header" header=resume.header /}
+
+<div class="col-sm-12 background">
+
+{>"./partials/resume/profile" profile=resume.profile /}
+{>"./partials/resume/work" work=resume.work /}
+{>"./partials/resume/certifications" certifications=resume.certifications /}
+{>"./partials/resume/courses" courses=resume.courses /}
+{>"./partials/resume/education" education=resume.education /}
+{>"./partials/resume/professional-skills" professionalskills=resume.professionalskills /}
+{>"./partials/resume/personal-skills" personalskills=resume.personalskills /}
+{>"./partials/resume/interests" interests=resume.interests /}
+{>"./partials/resume/contact" contact=resume.contact /}
+
+<footer id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <hr class="empty" style="margin-top: 0px; border-top: 3px solid rgba(0, 0, 0, 0.04);">
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<!-- Java Script -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/resume/js/bootstrap.min.js"></script>
+<script src="/resume/js/bootstrap-progressbar.js"></script>
+<script src="/resume/js/material.min.js"></script>
+<script src="/resume/js/ripples.min.js"></script>
+
+<script src="/resume/js/spy.js"></script>
+<script src="/resume/js/scripts.js"></script>
+<!-- Charts -->
+<script src="/resume/js/jquery.easypiechart.js"></script>
+<script src="/resume/js/chart.js"></script>
+
+</body>
+</html>

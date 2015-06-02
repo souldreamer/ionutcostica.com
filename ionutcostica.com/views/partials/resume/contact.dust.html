@@ -1,0 +1,38 @@
+<!-- Contact -->
+{?contact}
+{#contact}
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-5">
+                <ul>
+                    {>"./partials/resume/controls/section-title" section="contact" /}
+					{?address}
+                    <li>
+                        <span class="note">Address</span>
+						{#address}
+                        <p><strong>{.|s}</strong></p>
+						{/address}
+					</li>
+					{/address}
+					{?phone}
+					<li>
+                        <span class="note">Mobile Phone</span>
+                        <p><strong>{phone|s}</strong></p>
+					</li>
+					{/phone}
+					{?email}
+					<li>
+                        <span class="note">Email</span>
+                        <p><strong><a href="mailto:{email}">{email}</a></strong></p>
+                    </li>
+					{/email}
+                    {>"./partials/resume/controls/section-title" section="up" additional-css-classes="up hidden-print" /}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{/contact}
+{/contact}
+<!-- end Contact -->

@@ -1,0 +1,28 @@
+<!-- Profile -->
+{?profile}
+<section id="profile" class="profile activate">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-5">
+                <ul>
+                    {>"./partials/resume/controls/section-title" section="profile" /}
+                    <li>
+                        <span class="note">Full name</span>
+                        <p><strong>{profile.fullname|s}</strong></p>
+                    </li>
+                    <li>
+                        <span class="note">Born</span>
+                        <p><strong>{profile.birthdate|s}</strong></p>
+                        <p><strong>{profile.birthplace|s}</strong></p>
+                    </li>
+                    <li>
+                        <span class="note">LinkedIn Profile</span>
+                        <p><strong><a href="{profile.social.linkedin}">{profile.social.linkedin}</a></strong></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{/profile}
+<!-- end Profile -->
