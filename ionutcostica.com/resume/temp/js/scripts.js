@@ -14,7 +14,7 @@
 	});
 	
 	// Menu button - toggle
-	$('.top-menu').click(function(){
+	$('.top-menu:not(.dropdown-toggle)').click(function(){
 		$('nav').fadeToggle(300);
 	});
 	

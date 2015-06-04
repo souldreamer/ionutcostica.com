@@ -1,4 +1,8 @@
 {?skill}
-<p>{skill|s}{?proficiency}<span class="annotation pull-right">{s}{proficiency}%</span>{/proficiency}</p>
-{?proficiency}<div class="progress"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{proficiency}" aria-valuemin="0" aria-valuemax="100"></div></div>{/proficiency}
+<div class="clearfix skill-specific">
+	<span class="{?proficiency}col-xs-4 col-sm-4 col-md-4 col-lg-4{:else}col-xs-12 col-sm-12 col-md-12 col-lg-12{/proficiency}" style="text-align: left">{skill|s}</span>
+	{?proficiency}
+	<span class="col-xs-8 col-sm-8 col-md-8 col-lg-8"><div class="progress"><div class="progress-bar progress-bar-material-green-A700" role="progressbar" aria-valuenow="{proficiency}" aria-valuemin="0" aria-valuemax="100"></div></div></span>
+	{/proficiency}
+</div>
 {/skill}

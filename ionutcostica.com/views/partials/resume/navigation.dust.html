@@ -15,20 +15,25 @@
 
 <!-- Navigation for small devices -->
 <nav id="mini-nav" class="spy visible-sm visible-xs hidden-print">
-    <ul>
-        <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown">Menu</a>
-            <ul class="dropdown-menu">
-                <li class="active"><a href="#profile">Profile</a></li>
-                <li><a href="#work-experience">Work experience</a></li>
-				<li><a href="#certifications">Certifications</a></li>
-				<li><a href="#courses">Courses</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#professional-skills">Skills</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </li>
-      </ul>
+    <div class="dropdown">
+		<a class="pull-left dropdown-toggle top-menu btn btn-flat btn-material-purple" data-toggle="dropdown" title="Menu toggle" style="margin: 10px"><i class="mdi-navigation-menu"></i></a>
+		<div class="pull-right" style="margin: 0 8px">
+			<a href="/resume/docs/resume.pdf" class="top-download-resume btn btn-flat btn-material-blue" data-toggle="tooltip" data-placement="bottom" title="Download resume"><i class="mdi-file-cloud-download"></i></a>
+			<a href="javascript:window.print();" class="top-print-resume btn btn-flat btn-material-red" data-toggle="tooltip" data-placement="bottom" title="Print resume"><i class="mdi-action-print"></i></a>
+			<a class="top-contact btn btn-flat btn-material-orange" data-toggle="tooltip" data-placement="bottom" title="Contact me"><i class="mdi-action-info-outline"></i></a>
+			<a href="https://github.com/souldreamer/ionutcostica.com" class="top-source btn btn-flat btn-material-green" data-toggle="tooltip" data-placement="bottom" title="View resume source"><i class="mdi-action-settings-ethernet"></i></a>
+		</div>
+		<div class="clearfix"></div>
+        <div class="dropdown-menu">
+            <div><a href="#profile" class="btn btn-flat btn-material-blue">Profile</a></div>
+            <div><a href="#work-experience" class="btn btn-flat btn-material-blue">Work experience</a></div>
+			<div><a href="#certifications" class="btn btn-flat btn-material-blue">Certifications</a></div>
+			<div><a href="#courses" class="btn btn-flat btn-material-blue">Courses</a></div>
+            <div><a href="#education" class="btn btn-flat btn-material-blue">Education</a></div>
+            <div><a href="#professional-skills" class="btn btn-flat btn-material-blue">Skills</a></div>
+            <div><a href="#interests" class="btn btn-flat btn-material-blue">Interests</a></div>
+            <div><a href="#contact" class="btn btn-flat btn-material-blue">Contact</a></div>
+        </div>
+    </div>
 </nav>
 <!-- end Navigation for small devices -->

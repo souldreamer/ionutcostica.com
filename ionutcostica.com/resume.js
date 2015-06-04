@@ -215,7 +215,7 @@ var DataModel = {
 				proficiency: 70,
 				skills: [
 					{ proficiency: 85, skill: 'Graphics Algorithms' },
-					{ proficiency: 80, skill: 'HLSL/GLSL/GPU Assembler' },
+					{ proficiency: 80, skill: 'HLSL, GLSL, GPU Assembler' },
 					{ proficiency: 70, skill: 'OpenGL' },
 					{ proficiency: 70, skill: 'DirectX' },
 					{ proficiency: 50, skill: 'Maya plug-in development (MEL script/C++)' },
@@ -234,15 +234,18 @@ var DataModel = {
 			}
 		],
 		personalskills: [
-			{ proficiency: 100, skill: 'Creativity' }
+			{ proficiency: 100, skill: 'Creativity' },
+			{ proficiency: 90, skill: 'Teamwork' },
+			{ proficiency: 70, skill: 'Leadership' },
+			{ proficiency: 100, skill: 'Black Magic (Coding =)' }
 		],
-		interests: [
+/*		interests: [
 			{
 				interest: '',
 				description: ''
 			}
 		],
-		contact: {
+*/		contact: {
 			address: ['7A Aleea Hotinului', 'Timisoara 300668, Timis, Romania'],
 			phone: '+40 735 655 650',
 			email: 'ionut.costica@gmail.com'

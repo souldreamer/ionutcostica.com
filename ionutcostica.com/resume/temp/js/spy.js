@@ -1,18 +1,21 @@
 // Cache selectors
 var lastId,
     topMenu = $(".spy"),
-    topMenuHeight = topMenu.outerHeight()-15,
+    topMenuHeight = $("#mini-nav").outerHeight(),
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function(){
-      var item = $($(this).attr("href"));
-      if (item.length) { return item; }
-    });
+	scrollItems = menuItems.map(function(){
+		var href = $(this).attr('href'); 
+		if (!href || href[0] !== '#') return;
+		var item = $(href);
+		if (item.length) { return item; }
+	});
 
 // Bind click handler to menu items
 // so we can get a fancy scroll animation
 menuItems.click(function(e){
+	topMenuHeight = $("#mini-nav").outerHeight();
   var href = $(this).attr("href"),
       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
   $('html, body').stop().animate({ 
@@ -42,4 +45,4 @@ $(window).scroll(function(){
          .parent().removeClass("active")
          .end().filter("[href=#"+id+"]").parent().addClass("active");
    }                   
-});   
+});

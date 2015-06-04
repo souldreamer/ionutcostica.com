@@ -339,13 +339,17 @@ ul .description {
 
 /* Nav ------------------------------------------------- */
 
-nav {
+nav#spy {
     position: fixed;
     top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
     left: 20px;
+    z-index: 999;
+}
+nav#mini-nav {
+    position: fixed;
     z-index: 999;
 }
 
@@ -465,12 +469,29 @@ nav .active a {
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+	opacity: 0;
+	width: 100%;
+}
+#mini-nav .open > .dropdown-menu {
+	opacity: 1;
+	-webkit-transition: opacity 300ms;
+	-moz-transition: opacity 300ms;
+	-ms-transition: opacity 300ms;
+	-o-transition: opacity 300ms;
+	transition: opacity 300ms;
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
     background-color: #000;
+}
+
+.dropdown-menu a.btn {
+	width: 100%;
+	margin: 0;
+	font-weight: 500;
+	font-family: 'Oswald';
 }
 
 /* Header ------------------------------------------------- */
@@ -789,7 +810,19 @@ form .icon {
 	display: inline;
 }
 
-@media (min-width: 992px), (max-width: 766px) and (min-width: 630px) {
+.skill-specific {
+	margin-top: 0.5em;
+}
+.skill-specific .progress {
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+
+#personal-skills div.skill-specific:first-of-type {
+	margin-top: -1em;
+}
+
+@media print, (min-width: 992px), (max-width: 766px) and (min-width: 630px) {
 	.header-line {
 		display: block;
 	}
@@ -806,4 +839,14 @@ form .icon {
 
     a, a:link, a:hover, a:visited, a:active { text-decoration: none; }
     a:link:after, a:visited:after { content: '' !important; }
+}
+
+@media screen and (max-width: 990px) {
+	.face {
+		margin-top: 25px;
+	}
+}
+
+.background {
+	padding: 0 !important;
 }
