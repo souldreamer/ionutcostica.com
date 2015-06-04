@@ -16,12 +16,14 @@ var lastId,
 // so we can get a fancy scroll animation
 menuItems.click(function(e){
 	topMenuHeight = $("#mini-nav").outerHeight();
-  var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-  $('html, body').stop().animate({ 
-      scrollTop: offsetTop
-  }, 1000);
-  e.preventDefault();
+	var href = $(this).attr("href");
+	if (!href) return;
+	
+	var offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+	$('html, body').stop().animate({ 
+		scrollTop: offsetTop
+	}, 1000);
+	e.preventDefault();
 });
 
 // Bind to scroll
