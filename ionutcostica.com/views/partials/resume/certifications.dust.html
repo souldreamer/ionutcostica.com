@@ -6,18 +6,14 @@
             <div class="col-sm-5 col-sm-offset-5">
                 <ul>
                     {>"./partials/resume/controls/section-title" section="certifications" /}
+					{#certifications}
                     <li>
-                        <span class="note">April 2015</span>
-                        <p><strong>MongoDB Certified Developer</strong> Associate Level</p>
-						<p><strong>The MongoDB Certification Program</strong></p>
-						<p class="description"><a href=""></a></p>
+                        {?date}<span class="note">{date|s}</span>{/date}
+                        {?name}<p>{name|s}</p>{/name}
+						{?issuer}<p><em>{issuer|s}</em></p>{/issuer}
+						{?description}<p class="description">{description|s}</p>{/description}
                     </li>
-					<li>
-                        <span class="note">1999</span>
-                        <p><strong>Certified C/C++ Programmer</strong></p>
-						<p><strong>International Computer School</strong></p>
-						<p class="description">Certified by the <em>Romanian Ministry of Education</em></p>
-                    </li>
+					{/certifications}
                 </ul>
             </div>
         </div>

@@ -850,3 +850,13 @@ form .icon {
 .background {
 	padding: 0 !important;
 }
+
+p {
+	word-break: break-word;
+}
+
+@media screen {
+	.hidden-screen {
+		display: none !important;
+	}
+}

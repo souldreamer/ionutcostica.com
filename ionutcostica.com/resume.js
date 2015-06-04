@@ -127,7 +127,7 @@ var DataModel = {
 				date: 'April 2015',
 				name: '<strong>MongoDB Certified Developer</strong> Associate Level',
 				issuer: 'The MongoDB Certification Program',
-				description: '<a href=""></a> 555-555-5555'
+				description: '<a href="https://university.mongodb.com/exams/display_certificate?license1=985&license2=645&license3=855" class="btn btn-material-green hidden-print">Verify</a><a href="https://university.mongodb.com/exams/display_certificate?license1=985&license2=645&license3=855" class="hidden-screen">Verify at https://university.mongodb.com/exams/display_certificate?license1=985&license2=645&license3=855</a><br/>(<em>License #</em>: 985-645-855)'
 			},
 			{
 				date: '1999',
