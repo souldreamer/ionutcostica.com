@@ -13,7 +13,10 @@ module.exports.addDustHelpers = function(kleiDust, DataModel) {
 			if (array[i] && array[i][keyname] == key) object = array[i];
 		}
 		var newContext = kleiDust.getDust().makeBase({object: object});
+		//context.push({object: object});
 		bodies.block(chunk, newContext);
+		//bodies.block(chunk, context);
+		//context.pop();
 		return chunk;
 	};
 	dusthelpers.getSectionIcon = function(chunk, context, bodies, params) {
