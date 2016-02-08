@@ -15,10 +15,14 @@
                         <p><strong>{profile.birthdate|s}</strong></p>
                         <p><strong>{profile.birthplace|s}</strong></p>
                     </li>
+	                {?profile.social}
+	                {#profile.social}
                     <li>
-                        <span class="note">LinkedIn Profile</span>
-                        <p><strong><a href="{profile.social.linkedin}">{profile.social.linkedin}</a></strong></p>
+                        {?title}<span class="note">{?icon}<i class="{icon}"></i> {/icon}{title|s}</span>{/title}
+                        {?url}<p><strong><a href="{url}">{url}</a></strong></p>{/url}
                     </li>
+	                {/profile.social}
+	                {/profile.social}
                 </ul>
             </div>
         </div>
