@@ -1,6 +1,8 @@
 /*jshint node:true*/
 'use strict';
 
+var env = 'DEBUG';
+
 var express = require('express');
 var kleiDust = require('klei-dust');
 var DataModel = require('./resume');
@@ -8,7 +10,7 @@ var dustHelpers = require('./dust-helpers');
 
 var app = express();
 
-kleiDust.setOptions({extension: 'dust.html', keepWhiteSpace: true, useHelpers: true});
+kleiDust.setOptions({ extension: 'dust.html', keepWhiteSpace: true, useHelpers: true });
 dustHelpers.addDustHelpers(kleiDust, DataModel);
 
 app.set('views', __dirname + '/views');
@@ -27,6 +29,10 @@ app.use('/resume/img', express.static('ionutcostica.com/resume/temp/img'));
 app.use('/resume/js', express.static('ionutcostica.com/resume/temp/js'));
 
 app.get('/resume', function(req, res) {
+	if (env === 'DEBUG') {
+		delete require.cache[require.resolve('./resume')];
+		DataModel = require('./resume');
+	}
     console.log('requested resume for ionutcostica.com');
 	res.render('resume', DataModel);
 });

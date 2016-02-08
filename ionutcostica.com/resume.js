@@ -20,23 +20,32 @@ var DataModel = {
 			image: '/resume/img/profile.jpg',
 			statement: [
 				'<b>Hello, I\'m Ionut!</b> I\'m a Full Stack Web Developer &amp; Web Application Developer.',
-				'I\'m passionate about making great web sites &amp; applications, both client and server-side.',
+				'I\'m <em>passionate</em> about making great web sites &amp; applications, both client and server-side.',
 				'I love creating programs with <em>engaging interfaces</em> and a <em>streamlined user experience</em>.',
-				'I like code that is <em>performant</em>, <em>elegant</em> and easily <em>maintainable</em>.'
+				'I like code that is <em>performant</em>, <em>elegant</em> and easily <em>maintainable</em>.',
+				'I\'m very interested in the Web in general and JavaScript in particular.',
+				'I enjoy learning and experimenting with new technologies.'
 				]
 		},
 		profile: {
 			fullname: 'Ionut Costica',
 			birthdate: '20 May 1986',
 			birthplace: 'Timisoara, Romania',
-			social: {
-				linkedin: 'https://www.linkedin.com/in/ionutcostica'
-			}
+			social: [
+				{ site: 'linkedin', title: 'LinkedIn Profile',
+					url: 'https://www.linkedin.com/in/ionutcostica', icon: 'zmdi zmdi-linkedin-box' },
+				{ site: 'github', title: 'GitHub Projects &amp; Contributions',
+					url: 'https://github.com/souldreamer', icon: 'zmdi zmdi-github' },
+				{ site: 'codepen', title: 'Codepen Playground',
+					url: 'http://codepen.io/souldreamer', icon: 'zmdi zmdi-codepen' },
+				{ site: 'stackoverflow', title: 'StackOverflow Q&amp;A',
+					url: 'https://stackoverflow.com/users/1252155/ionut-costica', icon: 'zmdi zmdi-stackoverflow' }
+			]
 		},
 		work: [
 			{
 				period: 'January 2012 - Current',
-				length: '3 years, 5 months',
+				length: '4 years, 1 month',
 				details: [
 					'<strong>SC AEM SA</strong>',
 					'<strong>Web Application Developer</strong>'
@@ -138,6 +147,13 @@ var DataModel = {
 		],
 		courses: [
 			{
+				period: 'December 2015 - current',
+				course: 'Senior Web Developer Nanodegree',
+				institution: 'Udacity',
+				url: 'https://www.udacity.com/course/senior-web-developer--nd802',
+				description: 'Taking course to build my code portfolio and continue learning new technologies'
+			},
+			{
 				period: 'March 2015 - May 2015',
 				course: 'M101JS: MongoDB for Node.js Developers',
 				institution: 'MongoDB University',
@@ -162,8 +178,8 @@ var DataModel = {
 				location: 'New Haven, Connecticut, USA'
 			},
 			{
-				period: 'September 2005 - June 2007, September 2014 - Present',
-				degree: 'Bachelors Degree - Computer Science in English (candidate, est. September 2015)',
+				period: 'September 2005 - June 2007, September 2014 - September 2015',
+				degree: 'Bachelors Degree - B.Sc. Computer Science in English',
 				school: 'West University of Timisoara',
 				location: 'Timisoara, Romania'
 			}
@@ -177,8 +193,12 @@ var DataModel = {
 					{ proficiency: 90, skill: 'CSS3' },
 					{ proficiency: 70, skill: 'LESS/SASS' },
 					{ proficiency: 95, skill: 'JavaScript' },
+					{ proficiency: 60, skill: 'JavaScript (ES6)' },
+					{ proficiency: 50, skill: 'TypeScript' },
 					{ proficiency: 80, skill: 'jQuery' },
-					{ proficiency: 70, skill: 'Mootools' }
+					{ proficiency: 70, skill: 'Mootools' },
+					{ proficiency: 40, skill: 'Angular.js' },
+					{ proficiency: 50, skill: 'Angular2' }
 				]
 			},
 			{
@@ -234,10 +254,12 @@ var DataModel = {
 			}
 		],
 		personalskills: [
+			{ proficiency: 110, skill: 'Passion' },
 			{ proficiency: 100, skill: 'Creativity' },
+			{ proficiency: 90, skill: 'Learning' },
 			{ proficiency: 90, skill: 'Teamwork' },
 			{ proficiency: 70, skill: 'Leadership' },
-			{ proficiency: 100, skill: 'Black Magic (Coding =)' }
+			{ proficiency: 99, skill: 'Black Magic (Coding =)' }
 		],
 /*		interests: [
 			{
