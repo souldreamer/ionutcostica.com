@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1101f79a-3d25-43a0-9d66-43950c2cce94" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionutcostica.com/resume.js" afterPath="$PROJECT_DIR$/ionutcostica.com/resume.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionutcostica.com/resume/temp/css/custom.css" afterPath="$PROJECT_DIR$/ionutcostica.com/resume/temp/css/custom.css" />
     </list>
     <ignored path="ionutcostica.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resume.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="resume.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ionutcostica.com/resume.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31257078">
+            <state vertical-scroll-proportion="0.0">
               <caret line="53" column="90" selection-start-line="53" selection-start-column="90" selection-end-line="53" selection-end-column="90" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ionutcostica.com/resume/temp/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.1">
-              <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.3352872">
+              <caret line="830" column="26" selection-start-line="830" selection-start-column="26" selection-end-line="830" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -138,8 +138,8 @@
         <option value="$PROJECT_DIR$/ionutcostica.com/server.js" />
         <option value="$PROJECT_DIR$/ionutcostica.com/views/resume.dust.html" />
         <option value="$PROJECT_DIR$/ionutcostica.com/views/partials/resume/profile.dust.html" />
-        <option value="$PROJECT_DIR$/ionutcostica.com/resume/temp/css/custom.css" />
         <option value="$PROJECT_DIR$/ionutcostica.com/resume.js" />
+        <option value="$PROJECT_DIR$/ionutcostica.com/resume/temp/css/custom.css" />
       </list>
     </option>
   </component>
@@ -514,14 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionutcostica.com/resume/temp/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.1">
-          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.0">
@@ -532,11 +524,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ionutcostica.com/resume.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31257078">
+        <state vertical-scroll-proportion="0.0">
           <caret line="53" column="90" selection-start-line="53" selection-start-column="90" selection-end-line="53" selection-end-column="90" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionutcostica.com/resume/temp/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3352872">
+          <caret line="830" column="26" selection-start-line="830" selection-start-column="26" selection-end-line="830" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -826,6 +826,11 @@ form .icon {
 	margin-top: 1em;
 }
 
+ul:hover li i {
+	transition: transform 0.5s;
+	transform: scale(1.3);
+}
+
 @media print, (min-width: 992px), (max-width: 766px) and (min-width: 630px) {
 	.header-line {
 		display: block;
