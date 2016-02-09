@@ -47,11 +47,13 @@ var DataModel = {
 				period: 'January 2012 - Current',
 				length: '4 years, 1 month',
 				details: [
-					'<strong>SC AEM SA</strong>',
+					'<strong><a href="http://www.aem.ro">SC AEM SA</a></strong>',
 					'<strong>Web Application Developer</strong>'
 				],
 				description: [
-					'Developing Intranet Web Applications for AMR (Automated Meter Reading), meter configuration and report generation.'
+					'Developing B2B customized Intranet Web Applications for AMR (Automated Meter Reading), meter' +
+					' configuration and report generation. AEM SA is one of the biggest electricity meter producers' +
+					' of the country and the application is used by all the major national electricity suppliers.'
 				],
 				technologies: [
 					{type: 'Back-end', which: 'C#, ASP.NET, DevExpress, Microsoft SQL Server, MongoDB'},
