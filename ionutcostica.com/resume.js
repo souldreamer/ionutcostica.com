@@ -45,7 +45,7 @@ var DataModel = {
 		work: [
 			{
 				period: 'January 2012 - Current',
-				length: '4 years, 1 month',
+				length: '5 years, 3 months',
 				details: [
 					'<strong><a href="http://www.aem.ro">SC AEM SA</a></strong>',
 					'<strong>Web Application Developer</strong>'
@@ -57,8 +57,8 @@ var DataModel = {
 				],
 				technologies: [
 					{type: 'Back-end', which: 'C#, ASP.NET, DevExpress, Microsoft SQL Server, MongoDB'},
-					{type: 'Front-end', which: 'HTML5, CSS3, JavaScript, JQuery'},
-					{which: 'Additionally, worked on improving the user interface and user experience of the application, and convinced the management to let me implement a caching system using MongoDB as a storage layer, which greatly improved overall performance and user experience.'}
+					{type: 'Front-end', which: 'HTML5, CSS3, JavaScript, JQuery, TypeScript, React.js'},
+					{which: 'Additionally, worked on improving the user interface and user experience of the application, and convinced the management to let me implement a caching system using MongoDB as a storage layer, which greatly improved overall performance and user experience, and to re-implement one of the main applications using React.'}
 				]
 			},
 			{
@@ -195,12 +195,13 @@ var DataModel = {
 					{ proficiency: 90, skill: 'CSS3' },
 					{ proficiency: 70, skill: 'LESS/SASS' },
 					{ proficiency: 95, skill: 'JavaScript' },
-					{ proficiency: 60, skill: 'JavaScript (ES6)' },
-					{ proficiency: 50, skill: 'TypeScript' },
-					{ proficiency: 80, skill: 'jQuery' },
-					{ proficiency: 70, skill: 'Mootools' },
-					{ proficiency: 40, skill: 'Angular.js' },
-					{ proficiency: 50, skill: 'Angular2' }
+					{ proficiency: 80, skill: 'JavaScript (ES6/7)' },
+					{ proficiency: 85, skill: 'TypeScript' },
+					{ proficiency: 75, skill: 'jQuery' },
+					{ proficiency: 50, skill: 'Mootools' },
+					{ proficiency: 50, skill: 'Angular.js' },
+					{ proficiency: 85, skill: 'Angular2' },
+					{ proficiency: 75, skill: 'React.js' }
 				]
 			},
 			{
@@ -209,7 +210,7 @@ var DataModel = {
 				skills: [
 					{ proficiency: 90, skill: 'ASP.NET &amp; C#' },
 					{ proficiency: 70, skill: 'node.js' },
-					{ proficiency: 60, skill: 'PHP' }
+					{ proficiency: 50, skill: 'PHP' }
 				]
 			},
 			{

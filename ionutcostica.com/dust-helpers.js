@@ -54,4 +54,4 @@ module.exports.addDustHelpers = function(kleiDust, DataModel) {
 		return chunk.write(object[value]);
 	};
 	kleiDust.setHelpers(dusthelpers);
-}
+};
